@@ -183,7 +183,8 @@ consumption, rainfall impact, and groundwater depletion rates.""")
              Total Items (8523), and Average Rating (3.9). The dashboard features a filter panel to refine data by Outlet Location, Size, and Item Type. Visuals include item category breakdowns, fat content analysis, 
              and outlet-wise fat distribution. Clean, user-friendly, and focused on fast decision-making.
 """)
-    st.image('pbi.jpg')
+     st.image('pbi.jpg')
+
     st.markdown("- [🔗 **Blinkit Sales Dashboard -**](https://app.powerbi.com/groups/me/reports/4f0bfc3d-560f-40be-b565-3d753f3da3ef/13c14fd88c047a5d0e20?experience=power-bi)")
     
     st.write("""- **Olympic Games (1896–2016) Dashboard -**-This Power BI dashboard provides a visual summary of Olympic medal counts from 1896 to 2016. It highlights medal distribution by country, with Germany and Greece leading.
