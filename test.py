@@ -207,6 +207,13 @@ consumption, rainfall impact, and groundwater depletion rates.""")
     st.header("🎓 Education")
     st.write("""**- Bachelor of Business Administrative (BBA)**- Llyod Group of Institute Management and Technology, Greater Noida, Graduated
 2025| 2024 - Level up My skill: Data science -Data Analysis, Data Management. Python Programming, Statistics.""")
+
+    st.download_button(
+    label="⬇️ Download Profile (Text)",
+    data=profile_text,
+    file_name="Subham_Gupta_Profile.txt",
+    mime="text/plain"
+)
     
 elif selected_tab == "🔍 Movie Recommendation System":
     import streamlit as st
