@@ -95,7 +95,7 @@ elif selected_tab == '🍔 Food Review Sentiment':
     st.header('🍔 Food Review Sentiment')
     st.write('Food Review Sentiment Analysis automatically determines whether a food review expresses a positive, negative, or neutral opinion. It helps businesses and users quickly understand public sentiment toward food, restaurants, or services.')
     msg3 = st.text_input('Enter Msg', key='msg3')
-    if st.button('Prediction', key='b3'):
+    if st.button('Review', key='b3'):
         pre = review_model.predict([msg3])
         if pre[0] == 0:
             st.warning('😞 Not Satisfied')
