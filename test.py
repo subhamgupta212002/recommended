@@ -113,7 +113,7 @@ elif selected_tab == '🍔 Food Review Sentiment':
         st.dataframe(df_review)
 
 elif selected_tab == '🗞️ News Classification':
-    st.image('D:/download.jpeg')
+    st.image('download.jpeg')
 
 elif selected_tab == "🧑‍🔬 Profile":
     st.title("Subham Gupta")
