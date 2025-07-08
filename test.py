@@ -88,7 +88,7 @@ elif selected_tab == '🗣️ Language Detection':
         df_lang = pd.read_csv(uploader_file2, header=None, names=['Msg'])
         pred = language_model.predict(df_lang.Msg)
         df_lang.index = range(1, df_lang.shape[0] + 1)
-        df_lang['Detect'] = pred
+        df_lang['Prediction'] = pred
         st.dataframe(df_lang)
 
 elif selected_tab == '🍔 Food Review Sentiment':
