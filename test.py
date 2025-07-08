@@ -204,8 +204,8 @@ consumption, rainfall impact, and groundwater depletion rates.""")
             - Incorporated bulk file uploads for large-scale text predictions.
             - Provided dynamic visual feedback and personalized profile sections.
              """)
-    st.markdown("- [🔗 **💡 LENS_R eXpert -**](https://github.com/subhamgupta212002/recommended/blob/main/test.py)")
-    st.markdown("- [ **Streamlit -**](https://recommend2025.streamlit.app/)")
+            st.markdown("- [🔗 **💡 LENS_R eXpert -**](https://github.com/subhamgupta212002/recommended/blob/main/test.py)")
+            st.markdown("- [ **Streamlit -**](https://recommend2025.streamlit.app/)")
     
     st.header("🎓 Education")
     st.write("""**- Bachelor of Business Administrative (BBA)**- Llyod Group of Institute Management and Technology, Greater Noida, Graduated
