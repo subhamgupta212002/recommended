@@ -206,7 +206,6 @@ consumption, rainfall impact, and groundwater depletion rates.""")
              """)
     st.markdown("- [🔗 **💡 LENS_R eXpert -**](https://github.com/subhamgupta212002/recommended/blob/main/test.py)")
     st.markdown("- [ **Streamlit -**](https://recommend2025.streamlit.app/)")
-    st.image("https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png", width=200)
     
     st.header("🎓 Education")
     st.write("""**- Bachelor of Business Administrative (BBA)**- Llyod Group of Institute Management and Technology, Greater Noida, Graduated
