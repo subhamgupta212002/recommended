@@ -218,7 +218,7 @@ elif selected_tab == "Recommened":
     # Load and prepare the data
     @st.cache_data
     def load_data():
-        df = pd.read_csv('D:/DataScience/ML viideo/unsupervised/movies_content.csv')
+        df = pd.read_csv('movies_content.csv')
         df2 = df[['movie_id', 'description', 'language', 'director', 'cast', 'genre', 'name']]
         df3 = df2.dropna()
         df4 = df3.reset_index(drop=True)
