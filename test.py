@@ -183,7 +183,7 @@ consumption, rainfall impact, and groundwater depletion rates.""")
              Total Items (8523), and Average Rating (3.9). The dashboard features a filter panel to refine data by Outlet Location, Size, and Item Type. Visuals include item category breakdowns, fat content analysis, 
              and outlet-wise fat distribution. Clean, user-friendly, and focused on fast decision-making.
 """)
-    st.image('pbi.jpg', caption="Blinkit Sales Overview", width=400)
+    st.image('pbi.png', caption="Blinkit Sales Overview", width=400)
 
     st.markdown("- [🔗 **Blinkit Sales Dashboard -**](https://app.powerbi.com/groups/me/reports/4f0bfc3d-560f-40be-b565-3d753f3da3ef/13c14fd88c047a5d0e20?experience=power-bi)")
     
