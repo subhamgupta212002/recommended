@@ -22,7 +22,7 @@ st.markdown("""
 selected_tab = st.selectbox('Select a Module:', ['✉️ Spam Classifier', '🗣️ Language Detection', '🍔 Food Review Sentiment', '🗞️ News Classification', '🧑‍🔬 Profile','Recommened'])
 
 # Sidebar - Always Visible Content🧑
-st.sidebar.image('D:/images/IMG_3441-01-01.jpeg')
+st.sidebar.image('IMG_3441-01-01.jpeg')
 
 with st.sidebar.expander('ℹ️ About us'):
     st.write('We are a group of students trying to understand the concept of NLP')
