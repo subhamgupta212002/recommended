@@ -193,7 +193,7 @@ consumption, rainfall impact, and groundwater depletion rates.""")
 
     st.subheader('**Meachine Learning -** ')
     st.write("""
-            - **💡 LENS eXpert - NLP Suite-**
+            - **💡 LENS_R eXpert - NLP Suite-**
             Developed a multi-functional NLP web application using Streamlit that integrates four key text classification tools: Spam Detection, Language Detection,
             Food Review Sentiment Analysis, and News Classification. Enabled both single and bulk text processing with interactive dashboards.
             - **Key Features**:
@@ -202,7 +202,7 @@ consumption, rainfall impact, and groundwater depletion rates.""")
             - Incorporated bulk file uploads for large-scale text predictions.
             - Provided dynamic visual feedback and personalized profile sections.
              """)
-    st.markdown("[🔗 **💡 LENS eXpert -**](https://github.com/subhamgupta212002/LENS)")
+    st.markdown("[🔗 **💡 LENS eXpert -**](https://github.com/subhamgupta212002/recommended/blob/main/test.py)")
     
     st.header("🎓 Education")
     st.write("""**- Bachelor of Business Administrative (BBA)**- Llyod Group of Institute Management and Technology, Greater Noida, Graduated
