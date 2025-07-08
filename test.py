@@ -62,7 +62,7 @@ if selected_tab == '✉️ Spam Classifier':
         if pre[0] == 0:
             st.image('spam.jpg')
         else:
-            st.image('not_spam.pn g')
+            st.image('not_spam.png')
 
     uploader_file1 = st.file_uploader('Upload file containing bulk messages', type=['csv', 'txt'], key='uploader_file1')
 
