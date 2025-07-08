@@ -19,7 +19,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Tabs with tracking
-selected_tab = st.selectbox('Select a Module:', ['✉️ Spam Classifier', '🗣️ Language Detection', '🍔 Food Review Sentiment', '🗞️ News Classification', '🧑‍🔬 Profile','Recommened'])
+selected_tab = st.selectbox('Select a Module:', ['✉️ Spam Classifier', '🗣️ Language Detection', '🍔 Food Review Sentiment', '🗞️ News Classification', '🧑‍🔬 Profile','🔍 Movie Recommendation System'])
 
 # Sidebar - Always Visible Content🧑
 st.sidebar.image('IMG_3441-01-01.jpeg')
@@ -78,7 +78,7 @@ elif selected_tab == '🗣️ Language Detection':
     st.header('🗣️ Language Detection')
     st.write('Language Detection is the process of automatically identifying the language in which a given piece of text is written. This is a crucial first step in many Natural Language Processing (NLP) pipelines, especially when working with multilingual data.')
     msg2 = st.text_input('Enter Msg', key='msg2')
-    if st.button('Prediction', key='b2'):
+    if st.button('Detect', key='b2'):
         pre = language_model.predict([msg2])
         st.success(pre)
 
@@ -88,7 +88,7 @@ elif selected_tab == '🗣️ Language Detection':
         df_lang = pd.read_csv(uploader_file2, header=None, names=['Msg'])
         pred = language_model.predict(df_lang.Msg)
         df_lang.index = range(1, df_lang.shape[0] + 1)
-        df_lang['Prediction'] = pred
+        df_lang['Detect'] = pred
         st.dataframe(df_lang)
 
 elif selected_tab == '🍔 Food Review Sentiment':
@@ -208,7 +208,7 @@ consumption, rainfall impact, and groundwater depletion rates.""")
     st.write("""**- Bachelor of Business Administrative (BBA)**- Llyod Group of Institute Management and Technology, Greater Noida, Graduated
 2025| 2024 - Level up My skill: Data science -Data Analysis, Data Management. Python Programming, Statistics.""")
     
-elif selected_tab == "Recommened":
+elif selected_tab == "🔍 Movie Recommendation System":
     import streamlit as st
     import pandas as pd
     from sklearn.feature_extraction.text import TfidfVectorizer
