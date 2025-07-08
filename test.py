@@ -60,9 +60,9 @@ if selected_tab == '✉️ Spam Classifier':
     if st.button('Prediction', key='b1'):
         pre = spam_model.predict([msg1])
         if pre[0] == 0:
-            st.image('D:/DataScience/ML viideo/New folder/spam.jpg')
+            st.image('spam.jpg')
         else:
-            st.image('D:/DataScience/ML viideo/New folder/not_spam.pn g')
+            st.image('not_spam.pn g')
 
     uploader_file1 = st.file_uploader('Upload file containing bulk messages', type=['csv', 'txt'], key='uploader_file1')
 
