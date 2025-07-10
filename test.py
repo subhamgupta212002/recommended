@@ -159,17 +159,20 @@ accuracy.""")
     st.subheader('Power BI Project- ')
     st.write("""- **IPL_ANALYSIS DASHBOARD -**- A Power BI project that provides interactive insights into IPL matches and player performances
 across different years. Key metrics include wins, losses, trophy winners, most sixes, most fours, most centuries, highest wickettakers, and top run-scorers.""")
+    st.image('ipl.png', caption="IPL_ANALYSIS BI Dashboard", width=400)
     st.markdown("- [🔗 **IPL_ANALYSIS DASHBOARD -**](https://app.powerbi.com/groups/me/reports/15fa0400-44f1-4bfb-920d-67c3068b4bfc/83ee8f6c04805007709d?experience=power-bi)")
 
     st.write("""- **HR ANALYSIS DASHBOARD -**- A Power BI dashboard commonly used in HR analytics to gain insights into employee data.includes
 visualizations on employee count, salary distribution, age groups, departments, overtime, education levels, and job
 satisfaction.""")
+    st.image('hr.png', caption="HR ANALYSIS BI Dashboard", width=400)
     st.markdown("- [🔗 **HR ANALYSIS DASHBOARD -**](https://app.powerbi.com/groups/me/reports/2801758f-391f-4d5d-be52-ce0ef2127939/4f3e9f78923f1b29def3?experience=power-bi)")
 
     
     st.write("""- **GLOBAL WATER CONSUMPTION -**- A Power BI dashboard that highlights water consumption trends across the top 5 countries by
 year. It analyzes usage in sectors such as agriculture, household, and industry, and includes metrics like per capita
 consumption, rainfall impact, and groundwater depletion rates.""")
+    st.image('water.png', caption="GLOBAL WATER CONSUMPTION BI Dashboard", width=400)
     st.markdown("- [🔗 **GLOBAL WATER CONSUMPTION -**](https://app.powerbi.com/groups/me/reports/d2444240-699b-40ac-8ccb-3fa4f90fa78b/f32a39d947bcd191db47?experience=power-bi)")
 
     
@@ -178,7 +181,6 @@ consumption, rainfall impact, and groundwater depletion rates.""")
              venue-wise performance chart, pinpointing top-scoring grounds such as Dhaka, Sharjah, and Colombo. With easy navigation to year-wise and century-specific insights, this dashboard delivers a complete,
              interactive view of Sachin’s ODI legacy in a clean, intuitive layout.""")
     st.image('sachin.png', caption="Sachin Tendulkar ODI Power BI Dashboard", width=400)
-
     st.markdown("- [🔗 **Sachin Tendulkar ODI Power BI Dashboard -**](https://app.powerbi.com/groups/me/reports/157d04c6-867c-4801-8676-e8d579f20dcf/501fac6c46f46559b1b5?experience=power-bi)")
 
     st.write("""- **Blinkit Sales Dashboard -**- This Power BI dashboard provides an interactive overview of Blinkit's sales performance. It highlights key metrics such as Total Sales ($1.20M), Average Sales ($141), 
@@ -186,12 +188,12 @@ consumption, rainfall impact, and groundwater depletion rates.""")
              and outlet-wise fat distribution. Clean, user-friendly, and focused on fast decision-making.
 """)
     st.image('pbi.png', caption="Blinkit Sales Overview", width=400)
-
     st.markdown("- [🔗 **Blinkit Sales Dashboard -**](https://app.powerbi.com/groups/me/reports/4f0bfc3d-560f-40be-b565-3d753f3da3ef/13c14fd88c047a5d0e20?experience=power-bi)")
     
     st.write("""- **Olympic Games (1896–2016) Dashboard -**-This Power BI dashboard provides a visual summary of Olympic medal counts from 1896 to 2016. It highlights medal distribution by country, with Germany and Greece leading.
               The dashboard also lists top medal-winning athletes, such as Hermann Otto Ludwig Weingärtner with 6 medals. Additional filters and charts offer insights into medal counts by gender, total medals, and sports categories.
               The layout is clean, interactive, and easy to explore year-wise trends.""")
+    st.image('sports.png', caption="Olympic Games (1896–2016) Dashboard", width=400)
     st.markdown("- [🔗 **Olympic Games (1896–2016) Dashboard -**](https://app.powerbi.com/groups/me/reports/eae5e3f0-e022-44a1-8323-3caebe229c43/ea8311a4eb77d8f44461?experience=power-bi)")
 
 
