@@ -177,6 +177,8 @@ consumption, rainfall impact, and groundwater depletion rates.""")
              It showcases key highlights like total matches (463), total runs (15,203), centuries (34), fifties (116), wickets (154), and toss stats. The dashboard features a 
              venue-wise performance chart, pinpointing top-scoring grounds such as Dhaka, Sharjah, and Colombo. With easy navigation to year-wise and century-specific insights, this dashboard delivers a complete,
              interactive view of Sachin’s ODI legacy in a clean, intuitive layout.""")
+    st.image('sachin.png', caption="Sachin Tendulkar ODI Power BI Dashboard", width=400)
+
     st.markdown("- [🔗 **Sachin Tendulkar ODI Power BI Dashboard -**](https://app.powerbi.com/groups/me/reports/157d04c6-867c-4801-8676-e8d579f20dcf/501fac6c46f46559b1b5?experience=power-bi)")
 
     st.write("""- **Blinkit Sales Dashboard -**- This Power BI dashboard provides an interactive overview of Blinkit's sales performance. It highlights key metrics such as Total Sales ($1.20M), Average Sales ($141), 
