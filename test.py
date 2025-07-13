@@ -19,7 +19,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Tabs with tracking
-selected_tab = st.selectbox('Select a Module:', ['✉️ Spam Classifier', '🗣️ Language Detection', '🍔 Food Review Sentiment', '🗞️ News Classification', '🧑‍🔬 Profile','🔍 Movie Recommendation System'])
+selected_tab = st.selectbox('Select a Module:', ['✉️ Spam Classifier', '🗣️ Language Detection', '🍔 Food Review Sentiment', '🗞️ News Classification', '🧑‍🔬 Profile','🔍 Movie Recommendation System','🤖 ML Playground'])
 
 # Sidebar - Always Visible Content🧑
 st.sidebar.image('IMG_3441-01-01.jpeg')
@@ -293,6 +293,95 @@ elif selected_tab == "🔍 Movie Recommendation System":
                 with cols[idx]:
                     st.image(movie['poster'], width=150)
                     st.caption(f"{movie['name']}")
+                    
+elif selected_tab == "🤖 ML Playground":
+    from sklearn.preprocessing import MinMaxScaler, MaxAbsScaler, StandardScaler
+    from sklearn.model_selection import train_test_split
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.neighbors import KNeighborsClassifier
+    from sklearn.svm import SVC
+    from sklearn.tree import DecisionTreeClassifier
+    from sklearn.metrics import accuracy_score
+
+    st.title("🚀 ML Playground: Build Models Without Code")
+    st.write("Upload your CSV dataset, choose your target, select scaler and model, and see results instantly!")
+
+    uploaded_file = st.file_uploader("📁 Upload CSV Dataset", type=["csv"])
+
+    if uploaded_file:
+        df = pd.read_csv(uploaded_file)
+        st.subheader("📊 Dataset Preview")
+        st.dataframe(df.head())
+
+        with st.expander("🔍 Dataset Info"):
+            st.write("Shape:", df.shape)
+            st.write("Missing values:", df.isnull().sum())
+
+        target_col = st.selectbox("🎯 Select the Target Column", df.columns)
+        feature_cols = st.multiselect("🧠 Select Feature Columns", [col for col in df.columns if col != target_col])
+
+        scaler_name = st.selectbox("📐 Choose a Scaler", ["None", "MinMaxScaler", "MaxAbsScaler", "StandardScaler"])
+
+        model_name = st.selectbox("🤖 Choose an Algorithm", [
+            "Random Forest",
+            "Logistic Regression",
+            "K-Nearest Neighbors",
+            "Support Vector Machine",
+            "Decision Tree"
+        ])
+
+        if feature_cols and target_col:
+            df = df.dropna(subset=[target_col] + feature_cols)
+
+            X = df[feature_cols]
+            y = df[target_col]
+
+            X_encoded = pd.get_dummies(X, drop_first=True)
+            if y.dtype == 'object':
+                y = pd.factorize(y)[0]
+
+            test_size = st.slider("📏 Test Set Size", 0.1, 0.5, 0.2, 0.05)
+
+            if st.button("🚀 Train Model"):
+                X_train, X_test, y_train, y_test = train_test_split(X_encoded, y, test_size=test_size, random_state=42)
+
+                if scaler_name == "MinMaxScaler":
+                    scaler = MinMaxScaler()
+                    X_train = scaler.fit_transform(X_train)
+                    X_test = scaler.transform(X_test)
+                elif scaler_name == "MaxAbsScaler":
+                    scaler = MaxAbsScaler()
+                    X_train = scaler.fit_transform(X_train)
+                    X_test = scaler.transform(X_test)
+                elif scaler_name == "StandardScaler":
+                    scaler = StandardScaler()
+                    X_train = scaler.fit_transform(X_train)
+                    X_test = scaler.transform(X_test)
+
+                # Model Selection
+                if model_name == "Random Forest":
+                    model = RandomForestClassifier(random_state=42)
+                elif model_name == "Logistic Regression":
+                    model = LogisticRegression(max_iter=1000)
+                elif model_name == "K-Nearest Neighbors":
+                    model = KNeighborsClassifier(n_neighbors=8)
+                elif model_name == "Support Vector Machine":
+                    model = SVC()
+                elif model_name == "Decision Tree":
+                    model = DecisionTreeClassifier()
+
+                # Training
+                model.fit(X_train, y_train)
+
+                # Results
+                train_acc = model.score(X_train, y_train)
+                test_acc = model.score(X_test, y_test)
+
+                st.success(f"✅ Model Accuracy on Train Dataset: **{train_acc:.2f}**")
+                st.success(f"✅ Model Accuracy on Test Dataset: **{test_acc:.2f}**")
+
+
 
     st.header("📞 Contact")
     st.write("""📧 guptasubham797@gmail.com | 📱 +91-9101121227""")
