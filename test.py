@@ -129,17 +129,13 @@ elif selected_tab == "🧑‍🔬 Profile":
 
     st.header("🧰 Skills")
     st.write("""
-        - **Data Analysis**: Proficient in SQL Power BI, and Python for data analysis and reporting.
-        - **Data Visualizations**: Experienced in creating dashboards and visual reports using Matplotlib, Seaborn, Power BI
-          and Tableau.
-        - **Database Management**: Skilled in SOL, database design, and management.
+        - **Data Analysis & Programming:**: Proficient in SQL, Excel, and Python for data analysis, data manipulation, and statistical modeling, with expertise in libraries such as Pandas, NumPy, and Scikit-learn.
+        - **Data Visualizations**: Experienced in building interactive dashboards and visual reports using Power BI, Tableau, Excel (pivot tables, charts), Matplotlib, and Seaborn.
+        - **Database Management**: Skilled in SQL, database design, and management for efficient data retrieval and processing.
         - **Programming**: Knowledge of Python for data manipulation and analysis, with experience in
           libraries such as Pandas, Numpy and Statistics.
-        - **Data Cleaning**: Well-versed in techniques to prepare raw data for analysis, including:
-        - Handling Missing Values
-        - Correcting Data Errors Managing
-        - Data Duplicacy Performing Data
-        - Transformations
+        - **Data Cleaning & Preparation**: Strong ability to handle missing values, correct data errors, manage duplicates, and perform transformations for high-quality datasets.
+        - **Machine Learning & Statistics**: Knowledge of supervised and unsupervised learning techniques, exploratory data analysis (EDA), and statistical methods for insights and predictions.
              """)
 
     
@@ -388,3 +384,4 @@ elif selected_tab == "🤖 ML Playground":
 
     st.write("---")
     st.write("Thank You")
+
