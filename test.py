@@ -120,12 +120,10 @@ elif selected_tab == "🧑‍🔬 Profile":
     st.write("---")
 
     st.header("👤 About Me")
-    st.write("""**Hello**, my name is Subham Gupta. I’m from Assam and I’ve completed my Bachelor's 
-                 degree in Business Administration from Greater Noida. Currently,
-                  I’m upskilling in the field of Data Science, and I have recently completed a Data Analyst course. 
-                 During this course, I gained hands-on experience with tools such as SQL, Python, and Power BI,
-                  along with knowledge of data visualization and statistical analysis. 
-                 I am passionate about using data to solve real-world problems and eager to start my career as a data analyst.""")
+    st.write("""**Hello**, my name is Subham Gupta. I’m from Assam and I have completed my Bachelor's degree in Business 
+    Administration from Greater Noida and recently finished a Data Science course. During this program, I gained practical 
+    experience with SQL, Python, Excel, and Power BI, along with strong skills in data visualization and statistical analysis.
+    I am passionate about leveraging data to solve real-world problems and now seeking an opportunity to begin my career as a Data Analyst.""")
 
     st.header("🧰 Skills")
     st.write("""
@@ -212,6 +210,9 @@ consumption, rainfall impact, and groundwater depletion rates.""")
 2025| 2024 - Level up My skill: Data science -Data Analysis, Data Management. Python Programming, Statistics.""")
     
 elif selected_tab == "🔍 Movie Recommendation System":
+    st.header('🔍 Movie Recommendation System')
+    st.write('''Movie Recommendation System suggests personalized movies to users based on their preferences 
+    and viewing history, using machine learning techniques like collaborative and content-based filtering.''')
     import streamlit as st
     import pandas as pd
     from sklearn.feature_extraction.text import TfidfVectorizer
@@ -291,6 +292,9 @@ elif selected_tab == "🔍 Movie Recommendation System":
                     st.caption(f"{movie['name']}")
                     
 elif selected_tab == "🤖 ML Playground":
+    st.header('🤖 ML Playground')
+    st.write('''ML Playground is an interactive platform to experiment with machine learning models, allowing users to explore algorithms,
+    tune parameters, and visualize results for better understanding of ML concepts.''')
     from sklearn.preprocessing import MinMaxScaler, MaxAbsScaler, StandardScaler
     from sklearn.model_selection import train_test_split
     from sklearn.ensemble import RandomForestClassifier
@@ -384,4 +388,5 @@ elif selected_tab == "🤖 ML Playground":
 
     st.write("---")
     st.write("Thank You")
+
 
