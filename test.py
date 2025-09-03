@@ -32,16 +32,28 @@ Our platform brings together four powerful NLP solutions under one roof to help 
 
 ✨ Our Modules:
 - ✉️ **Spam Classifier** :
-We protect your inbox and communication channels by accurately detecting and filtering out unwanted spam messages. Whether it's emails, SMS, or social media comments, our spam classifier keeps your space clean and safe.
+We protect your inbox and communication channels by accurately detecting and filtering out unwanted spam messages. Whether it's emails, SMS, or social media comments, 
+our spam classifier keeps your space clean and safe.
 
 - **🗣️ Language Detection** :
-With just a few words, our system quickly detects the language of your text, enabling seamless processing of multilingual content. Perfect for global businesses, chatbots, and multilingual platforms.
+With just a few words, our system quickly detects the language of your text, enabling seamless processing of multilingual content. Perfect for global businesses, 
+chatbots, and multilingual platforms.
 
 - **🍔 Food Review Sentiment** :
-Discover what people really think about your food! Our sentiment analysis tool scans customer reviews and determines whether they are positive, negative, or neutral, helping restaurants and businesses improve their services and offerings.
+Discover what people really think about your food! Our sentiment analysis tool scans customer reviews and determines whether they are positive, negative, 
+or neutral, helping restaurants and businesses improve their services and offerings.
 
 - **🗞️ News Classification** :
-Stay organized and informed with our news classification module. It automatically categorizes news articles by topics, helping you sort and process vast amounts of information quickly and accurately.''')
+Stay organized and informed with our news classification module. It automatically categorizes news articles by topics, helping you sort and process vast
+amounts of information quickly and accurately.''')
+
+- **🎬 Movie Recommendation System** :
+Find the perfect movie for you! Using machine learning, this system analyzes user preferences and viewing history to suggest 
+personalized movie choices through collaborative and content-based filtering.
+
+- **🤖 ML Playground** : 
+Explore the power of machine learning! An interactive tool that lets users test algorithms, adjust parameters, and visualize outcomes—making it easier to learn, experiment, 
+and discover insights with real data.
              """)
 
 with st.sidebar.expander('🌐 Contact'):
@@ -55,7 +67,8 @@ with st.sidebar.expander('Help'):
 # Module Pages
 if selected_tab == '✉️ Spam Classifier':
     st.header('✉️ Spam Classifier')
-    st.write('A Spam Classifier is a system that automatically identifies whether a message is spam (unwanted or harmful content) or ham (legitimate content). It helps in filtering out irrelevant or potentially dangerous messages like ads, phishing links, or fraud attempts.')
+    st.write('A Spam Classifier is a system that automatically identifies whether a message is spam (unwanted or harmful content) or ham (legitimate content). 
+    It helps in filtering out irrelevant or potentially dangerous messages like ads, phishing links, or fraud attempts.')
     msg1 = st.text_input('Enter Msg', key='msg1')
     if st.button('Prediction', key='b1'):
         pre = spam_model.predict([msg1])
@@ -388,5 +401,6 @@ elif selected_tab == "🤖 ML Playground":
 
     st.write("---")
     st.write("Thank You")
+
 
 
