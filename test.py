@@ -67,8 +67,8 @@ with st.sidebar.expander('Help'):
 # Module Pages
 if selected_tab == '✉️ Spam Classifier':
     st.header('✉️ Spam Classifier')
-    st.write('A Spam Classifier is a system that automatically identifies whether a message is spam (unwanted or harmful content) or ham (legitimate content). 
-    It helps in filtering out irrelevant or potentially dangerous messages like ads, phishing links, or fraud attempts.')
+    st.write('''A Spam Classifier is a system that automatically identifies whether a message is spam (unwanted or harmful content) or ham (legitimate content). 
+    It helps in filtering out irrelevant or potentially dangerous messages like ads, phishing links, or fraud attempts.''')
     msg1 = st.text_input('Enter Msg', key='msg1')
     if st.button('Prediction', key='b1'):
         pre = spam_model.predict([msg1])
@@ -401,6 +401,7 @@ elif selected_tab == "🤖 ML Playground":
 
     st.write("---")
     st.write("Thank You")
+
 
 
 
