@@ -288,7 +288,6 @@ elif selected_tab == "🔍 Movie Recommendation System":
         return recommendations
 
     # Streamlit UI
-    st.title("🎬 Movie Recommendation System")
 
     selected_movie = st.selectbox("Select a movie to get recommendations:", df5['name'].values)
 
@@ -317,7 +316,6 @@ elif selected_tab == "🤖 ML Playground":
     from sklearn.tree import DecisionTreeClassifier
     from sklearn.metrics import accuracy_score
 
-    st.title("🚀 ML Playground: Build Models Without Code")
     st.write("Upload your CSV dataset, choose your target, select scaler and model, and see results instantly!")
 
     uploaded_file = st.file_uploader("📁 Upload CSV Dataset", type=["csv"])
@@ -401,6 +399,7 @@ elif selected_tab == "🤖 ML Playground":
 
     st.write("---")
     st.write("Thank You")
+
 
 
 
